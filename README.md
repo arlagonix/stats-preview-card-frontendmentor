@@ -1,10 +1,4 @@
-# Stats preview card component solution
-
-<h3 align="center">
-  <strong>
-    <a href="https://arlagonix.github.io/projects/stats-preview-card-component-main/">Open Demo in Github Pages</a>
-  </strong>
-</h3>
+# Stats Preview Card
 
 <p align="center">
   <img src="./images/results/desktop.jpg" width="100%">
