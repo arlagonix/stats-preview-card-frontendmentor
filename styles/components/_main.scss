@@ -1,0 +1,21 @@
+@use "../global/colors";
+@use "../global/mixins";
+@use "../global/globals";
+
+.main {
+  @include mixins.flex(center, center, column);
+  background-color: colors.$main-card-bg;
+  width: 100%;
+  max-width: 1100px;
+  border-radius: 1rem;
+  overflow: hidden;
+
+  @media (min-width: globals.$break-point-lg) {
+    flex-direction: row-reverse;
+
+    // Otherwise image container ignores height: 100%
+    // sad :(
+    height: 500px;
+    min-height: 500px;
+  }
+}

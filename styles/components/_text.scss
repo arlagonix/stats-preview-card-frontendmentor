@@ -1,0 +1,69 @@
+@use "../global/fonts";
+@use "../global/colors";
+@use "../global/globals";
+@use "../global/mixins";
+
+$font-size-nm: 16px;
+$font-size-md: 20px;
+$font-size-lg: 24px;
+$font-size-lg-lg: 42px;
+
+.text {
+  font-family: fonts.$font-family-standard;
+  color: colors.$secondary-white-1;
+  font-size: $font-size-nm;
+
+  &--type_header {
+    font-family: fonts.$font-family-header;
+    text-align: center;
+    font-size: $font-size-lg;
+    color: colors.$main-white;
+
+    @media (min-width: globals.$break-point-lg) {
+      text-align: left;
+      font-size: $font-size-lg-lg;
+    }
+  }
+
+  &--type_paragraph {
+    color: colors.$secondary-white-1;
+    text-align: center;
+    line-height: 200%;
+
+    @media (min-width: globals.$break-point-lg) {
+      text-align: left;
+    }
+  }
+
+  &--type_stats-value {
+    font-size: $font-size-md;
+    font-weight: 700;
+    color: colors.$main-white;
+
+    @media (min-width: globals.$break-point-lg) {
+      text-align: left;
+      font-size: $font-size-lg;
+    }
+  }
+
+  &--type_stats-description {
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    color: colors.$secondary-white-2;
+  }
+
+  &--type_link {
+    font-family: fonts.$font-family-header;
+    font-weight: 700;
+  }
+
+  &--type_footer {
+    text-align: center;
+  }
+
+  &--gradient {
+    @include mixins.moving-gradient-bg;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

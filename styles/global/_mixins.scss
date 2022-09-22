@@ -1,0 +1,32 @@
+@use "../global/colors";
+
+@mixin flex($align-items, $justify-content, $flex-direction) {
+  display: flex;
+  align-items: $align-items;
+  justify-content: $justify-content;
+  flex-direction: $flex-direction;
+}
+
+@mixin moving-gradient-bg {
+  background: linear-gradient(
+    -90deg,
+    colors.$gradient-1 0%,
+    colors.$gradient-2 46%,
+    colors.$gradient-3 100%
+  );
+  animation: gradient 10s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}

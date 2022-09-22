@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <meta
+      name="keywords"
+      content="Insights, Business grow, Data analytics, 
+               Revenue decisions, Customer experience, 
+               Overall efficiency"
+    />
+    <title>Stats preview card component</title>
+  </head>
+
+  <body class="page">
+    <!-- Main content of the page -->
+    <main class="main">
+      <!-- Picture -->
+      <figure class="picture-container">
+        <picture>
+          <source
+            media="(min-width: 900px)"
+            srcset=".\images\image-header-desktop.jpg"
+          />
+          <img
+            class="picture-container__img"
+            src=".\images\image-header-mobile.jpg"
+            alt="People sitting at a desk smiling and working"
+          />
+        </picture>
+      </figure>
+
+      <!-- Card -->
+      <section class="card">
+        <h1 class="text text--type_header">
+          Get <span class="text--gradient">insights</span> that help your
+          business grow.
+        </h1>
+        <p class="text text--type_paragraph">
+          Discover the benefits of data analytics and make better decisions
+          regarding revenue, customer experience, and overall efficiency.
+        </p>
+        <div class="card__stats">
+          <div class="stats-item">
+            <span class="text text--type_stats-value text--gradient">10k+</span>
+            <span class="text text--type_stats-description">companies</span>
+          </div>
+          <div class="stats-item">
+            <span class="text text--type_stats-value text--gradient">314</span>
+            <span class="text text--type_stats-description">templates</span>
+          </div>
+          <div class="stats-item">
+            <span class="text text--type_stats-value text--gradient">12M+</span>
+            <span class="text text--type_stats-description">queries</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="text text--type_footer">
+        for
+        <a
+          href="https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62"
+          target="_blank"
+          class="link text--gradient text--type_link"
+        >
+          Frontend&nbsp;Mentor
+        </a>
+        | by&nbsp;<a
+          href="https://github.com/arlagonix"
+          target="_blank"
+          class="link text--gradient text--type_link"
+          >Alexander&nbsp;Gorbunov
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+@use "../global/mixins";
+@use "../global/globals";
+
+.stats-item {
+  @include mixins.flex(center, center, column);
+  gap: 0.25rem;
+
+  @media (min-width: globals.$break-point-lg) {
+    align-items: flex-start;
+  }
+}

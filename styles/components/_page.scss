@@ -1,0 +1,10 @@
+@use "../global/colors";
+@use "../global/mixins";
+
+.page {
+  @include mixins.flex(center, center, column);
+  background-color: colors.$main-screen-bg;
+  min-height: 100vh;
+  padding: 2rem;
+  gap: 2rem;
+}

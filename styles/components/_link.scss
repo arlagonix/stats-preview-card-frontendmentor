@@ -1,0 +1,14 @@
+.link {
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+  -webkit-user-drag: none;
+
+  &:hover {
+    transform: scale(0.95);
+  }
+
+  &:active {
+    transform: scale(0.85);
+  }
+}
