@@ -1,6 +1,6 @@
 <h1 align="center">Stats Preview Card</h1>
 <p align="center">
-  Coded with <code>HTML</code>, <code>SCSS</code>, <code>JavaScript</code>
+  Coded with <code>HTML</code>, <code>SCSS</code>
 </p>
 
 <p align="center">
