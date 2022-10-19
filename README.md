@@ -1,4 +1,7 @@
-# Stats Preview Card
+<h1 align="center">Stats Preview Card</h1>
+<p align="center">
+  Coded with <code>HTML</code>, <code>SCSS</code>, <code>JavaScript</code>
+</p>
 
 <p align="center">
   <img src="./images/results/desktop.jpg" width="100%">
